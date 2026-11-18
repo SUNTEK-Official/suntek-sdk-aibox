@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_main_layout_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/install_APK"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="静默安装应用"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/set_ethernet_tethering"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="控制以太网络共享开关"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/get_ethernet_tethering"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="获取以太网络共享开关状态"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/update_OTA"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="OTA升级系统"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/get_Cpu_Usage"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="获取CPU使用率"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/get_Npu_Usage"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="获取NPU使用率"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/get_Memory_Usage"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="获取内存使用率"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/get_Firmware_Versions"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="获取固件版本信息"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/set_SerialNo"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="写入序列号信息(重启生效)"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/get_SerialNo"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="读取序列号信息"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/set_Default_Launcher"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设置默认的Launcher桌面"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

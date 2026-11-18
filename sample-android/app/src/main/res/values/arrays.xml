@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	
+    <string-array name="eth_list">
+		<item>获取以太网 IP</item>
+		<item>获取以太网 MAC 地址</item>
+		<item>获取以太网 子网掩码</item>
+		<item>获取以太网 网关</item>
+		<item>获取以太网 dns1</item>
+		<item>获取以太网 dns2</item>
+		<item>关闭以太网</item>
+		<item>打开以太网</item>
+		<item>设置以太网静态模式</item>
+		<item>设置以太网动态模式</item>
+	</string-array>
+
+	<string-array name="wifi_list">
+		<item>获取WIFI IP</item>
+		<item>获取WIFI MAC 地址</item>
+		<item>获取WIFI 子网掩码</item>
+		<item>获取WIFI 网关</item>
+		<item>获取WIFI dns1</item>
+		<item>获取WIFI dns2</item>
+		<item>关闭WIFI</item>
+		<item>打开WIFI</item>
+		<item>设置WIFI静态模式</item>
+		<item>设置WIFI动态模式</item>
+	</string-array>
+</resources>

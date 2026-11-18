@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="100.0dip">
+
+    <RadioGroup
+        android:id="@+id/rg_eth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_eth0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:checked="true"
+            android:text="eth0" />
+
+        <RadioButton
+            android:id="@+id/rb_eth1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="eth1"
+            android:layout_marginStart="30dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ethIp_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/rg_eth"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="以太网 IP： " />
+
+        <TextView
+            android:id="@+id/ethIP"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ethMac_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethIp_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="以太网 MAC地址： " />
+
+        <TextView
+            android:id="@+id/ethMAC"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ethNetMask_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethMac_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="以太网 子网掩码： " />
+
+        <TextView
+            android:id="@+id/ethNetMask"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ethGateWay_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethNetMask_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="以太网 网关： " />
+
+        <TextView
+            android:id="@+id/ethGateWay"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ethDns1_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethGateWay_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="以太网 dns1： " />
+
+        <TextView
+            android:id="@+id/ethDns1"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ethDns2_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethDns1_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="以太网 dns2： " />
+
+        <TextView
+            android:id="@+id/ethDns2"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ethEnabled_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethDns2_linear" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ethEnabled_linear">
+
+        <Button
+            android:id="@+id/enableEth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0px"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="打开以太网"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/setEthStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0px"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设置以太网静态模式"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/setEthDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设置以太网动态模式"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">14.0系统API</string>
+    <string name="app_version">APP版本号：</string>
+
+    <string name="close_sys_data">关机日期</string>
+    <string name="close_sys_time">关机时间</string>
+    <string name="open_sys_data">开机日期</string>
+    <string name="open_sys_time">开机时间</string>
+
+    <string name="toast_tip">没有选择任何一个GPIO口,请在需要控制的GPIO口单选框内打钩.</string>
+    <string name="gpio_eight">GPIO 8</string>
+    <string name="gpio_fiv">GPIO 5</string>
+    <string name="gpio_fou">GPIO 4</string>
+    <string name="gpio_one">GPIO 1</string>
+    <string name="gpio_port">GPIO口</string>
+    <string name="gpio_sev">12VLED</string>
+    <string name="gpio_seven">GPIO 7</string>
+    <string name="gpio_six">GPIO 6</string>
+    <string name="gpio_thr">GPIO 3</string>
+    <string name="gpio_two">GPIO 2</string>
+    <string name="gpio_value">值</string>
+    <string name="set_high_value">设置高电平</string>
+    <string name="set_low_value">设置低电平</string>
+
+    <string name="get_statusBar_state_is_fail">获取状态栏失败</string>
+    <string name="status">状态</string>
+    <string name="action_get_Status">状态栏状态</string>
+    <string name="action_hide_statusbar">禁用状态栏</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_show_statusbar">启用状态栏</string>
+    <string name="statusBar_hide_is_fail">禁用失败</string>
+    <string name="statusBar_is_hideing">状态栏已禁用</string>
+    <string name="statusBar_is_showing">状态栏已启用</string>
+    <string name="statusBar_show_is_fail">启用失败</string>
+
+    <string name="get_navigationBar_state_is_fail">获取导航栏失败</string>
+    <string name="action_get_navigation">导航栏状态</string>
+    <string name="action_hide_navigationbar">禁用导航栏</string>
+    <string name="action_show_navigationbar">启用导航栏</string>
+    <string name="navigationBar_hide_is_fail">禁用失败</string>
+    <string name="navigationBar_is_hideing">导航栏已禁用</string>
+    <string name="navigationBar_is_showing">导航栏已启用</string>
+    <string name="navigationBar_show_is_fail">启用失败</string>
+
+    <string name="interface_exception">接口异常</string>
+
+    <string name="power_on_time">开机时间:%s</string>
+    <string name="power_on_status">开机状态:%s</string>
+    <string name="watch_dog_status">看门狗状态:%s</string>
+    <string name="feed_watch_dog_status">喂狗:%s</string>
+    <string name="mcu_version">Mcu 版本:%d</string>
+    <string name="content_cannot_empty">内容不能为空</string>
+
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+
+</resources>

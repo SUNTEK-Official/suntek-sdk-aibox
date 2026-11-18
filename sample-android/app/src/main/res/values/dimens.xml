@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_main_layout_margin">10.0dip</dimen>
+    <dimen name="activity_main_layout_width">210.0dip</dimen>
+    <dimen name="activity_main_padding">10.0px</dimen>
+    <dimen name="activity_scheduled_power_on_and_off">10.0dip</dimen>
+</resources>

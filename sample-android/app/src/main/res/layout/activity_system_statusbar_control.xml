@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showStatus"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="@string/action_show_statusbar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/hideStatus"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="@string/action_hide_statusbar"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/show" />
+
+        <Button
+            android:id="@+id/getStatus"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="@string/action_get_Status"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/hide" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showNavigation"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="@string/action_show_navigationbar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/hideNavigation"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="@string/action_hide_navigationbar"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/show" />
+
+        <Button
+            android:id="@+id/getNavigation"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="@string/action_get_navigation"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/hide" />
+    </LinearLayout>
+
+</LinearLayout>

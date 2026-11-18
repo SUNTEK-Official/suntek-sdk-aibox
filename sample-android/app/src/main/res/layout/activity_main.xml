@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="100.0dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/systemStatusbarControl"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="系统导航栏控制"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/screenDirectionControl"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="屏幕方向控制"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/systemStatusbarControl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/screenBacklightControl"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="屏幕背光控制"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/screenDirectionControl" />
+
+        <Button
+            android:id="@+id/scheduledPowerOnAndOff"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="定时开关机接口"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/screenBacklightControl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/screenShot"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="系统截屏接口"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/scheduledPowerOnAndOff" />
+
+        <Button
+            android:id="@+id/restoreFactorySettings"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="恢复出厂设置"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/screenShot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/userGpioControl"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="用户GPIO接口"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/restoreFactorySettings" />
+
+        <Button
+            android:id="@+id/settingEthernetParameters"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="以太网参数设置"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/userGpioControl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settingWifiParameters"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="WIFI参数设置"
+            android:enabled="true"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/settingEthernetParameters" />
+
+        <Button
+            android:id="@+id/wirelessAdbDebugControl"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="无线ADB控制"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/settingWifiParameters" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setSystemTime"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设置系统时间"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/wirelessAdbDebugControl" />
+
+        <Button
+            android:id="@+id/deviceKernelInfo"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设备内核信息"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/setSystemTime" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_mcu"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="单片机"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/deviceKernelInfo" />
+
+        <Button
+            android:id="@+id/customization"
+            android:layout_width="@dimen/activity_main_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_main_layout_margin"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="客户定制"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/btn_mcu" />
+    </LinearLayout>
+
+
+</LinearLayout>

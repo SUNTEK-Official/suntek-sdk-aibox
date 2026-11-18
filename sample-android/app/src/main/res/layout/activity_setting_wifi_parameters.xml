@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="100.0dip">
+
+    <LinearLayout
+        android:id="@+id/wifiIp_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="WIFI IP： " />
+
+        <TextView
+            android:id="@+id/wifiIP"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wifiMac_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiIp_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="WIFI MAC地址： " />
+
+        <TextView
+            android:id="@+id/wifiMAC"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wifiNetMask_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiMac_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="WIFI 子网掩码： " />
+
+        <TextView
+            android:id="@+id/wifiNetMask"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wifiGateWay_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiNetMask_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="WIFI 网关： " />
+
+        <TextView
+            android:id="@+id/wifiGateWay"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wifiDns1_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiGateWay_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="WIFI dns1： " />
+
+        <TextView
+            android:id="@+id/wifiDns1"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wifiDns2_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiDns1_linear">
+
+        <TextView
+            style="@style/ethernet_text_style"
+            android:text="WIFI dns2： " />
+
+        <TextView
+            android:id="@+id/wifiDns2"
+            style="@style/ethernet_text_style1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wifiEnabled_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiDns2_linear" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wifiEnabled_linear">
+
+        <Button
+            android:id="@+id/setWifiStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0px"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设置WIFI静态模式"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/setWifiDynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:padding="@dimen/activity_main_padding"
+            android:text="设置WIFI动态模式"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
