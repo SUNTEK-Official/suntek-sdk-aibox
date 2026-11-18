@@ -176,13 +176,19 @@ Revision history
 
 1. The integrated development environment used in this article is Android Studio 3.4.1 , as shown in Figure 1-1 below .
 
-Figure 1-1 Android Studio 3.4.1​
+![SUNTEK AI-Box Android 14 API Manual - aibox-image1.png](./images/aibox-image1.png)
+
+Figure 1-1 Android Studio 3.4.1
 
 2. Import the ZY-Interface.jar file into the project . Copy the ZY-Interface.jar file to the libs directory of the project, as shown in Figure 1-2 below.
+
+![SUNTEK AI-Box Android 14 API Manual - aibox-image2.png](./images/aibox-image2.png)
 
 Figure 1-2 shows the copying of zY-Interface.jar to the libs directory.
 
 Right-click the ZY-Interface.jar file in the libs folder , and then select "Add As Libraryr...". The ZY-Interface.jar file has now been successfully imported, as shown in Figure 1-3 below.
+
+![SUNTEK AI-Box Android 14 API Manual - aibox-image3.png](./images/aibox-image3.png)
 
 Figure 1-3 Importing the zY-Interface.jar file
 
@@ -190,21 +196,21 @@ Notice:
 
 This API call requires initialization:
 
+```java
 Zy sjSystemManager m anager = ( Zy sjSystemManager)getSystemService( " z y sj");
+```
 
 Getting Started with the API
 
 First, you need to declare the object, and then you can start using the API, as shown below.
 
+```java
 // Declare the manager object
-
 private ZysjSystemManager manager;
-
 manager = (ZysjSystemManager)getSystemService( " zysj " );
-
 //Using API
-
 manager. zY SystemBar(0);
+```
 
 ### Chapter Two: Interface Usage Examples and Parameter Details
 
@@ -418,6 +424,8 @@ Interface function: The interface allows setting static IP, gateway, DNS and oth
 Application scenario: Remotely modifying relevant parameters of an Ethernet network;
 
 Note: The port next to TF is "eth0", and the second port is "eth1".
+
+![SUNTEK AI-Box Android 14 API Manual - aibox-image4.png](./images/aibox-image4.png)
 
 Get Ethernet IP address
 
